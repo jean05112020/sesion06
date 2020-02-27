@@ -1,5 +1,7 @@
 package com.mitocode.ejercicio6.referencias.metodos;
 
+import java.util.Arrays;
+
 public class Programa1 {
 	
 	static void referenciaMetodoStatic() {
@@ -23,6 +25,21 @@ public class Programa1 {
 		// Simplificado
 		IOperacion op3 = Programa1::referenciaMetodoStatic;
 		op3.imprimir();
+		
+		
+		
+		String[] colores = {"negro","amarillo","verde","azul","violeta"};
+		System.out.println("colores");
+		for (String color : colores) {
+			System.out.print(color + " ");
+		}
+		
+		// esto :: sirve para identificar q son metodos de referencia
+		Arrays.sort(colores, String::compareToIgnoreCase);
+		System.out.println("\ncolores ordenados");
+		for (String color : colores) {
+			System.out.print(color + " ");
+		}
 		
 	}
 
