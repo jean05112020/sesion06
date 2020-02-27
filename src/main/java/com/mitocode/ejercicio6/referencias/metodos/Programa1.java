@@ -16,7 +16,7 @@ public class Programa1 {
 		};
 		op1.imprimir();
 		
-		// Referenciar a un metodo static
+		// Referenciar a un metodo static, tiene q ser sin parametros
 		IOperacion op2 = () -> Programa1.referenciaMetodoStatic();
 		op2.imprimir();
 		
