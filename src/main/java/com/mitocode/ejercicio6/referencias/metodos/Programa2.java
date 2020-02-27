@@ -2,6 +2,7 @@ package com.mitocode.ejercicio6.referencias.metodos;
 
 public class Programa2 {
 	public static void main(String[] args) {
+		//clase anonima
 		IEmpleado iemp = new IEmpleado() {
 			
 			@Override
