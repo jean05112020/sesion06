@@ -18,6 +18,7 @@ public class Programa1 {
 		IConsumer<Integer> ic1 = (s) -> System.out.println(s); 
 		ic1.accept(10);
 		
+		//interfaz consumer, solor acepta un parametro
 		Consumer<String> c1 = (c) -> System.out.println(c);
 		c1.accept("jean 1");
 		
